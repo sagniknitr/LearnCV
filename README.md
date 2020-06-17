@@ -1,2 +1,2 @@
-# LearnCV
-A QT based GUI tool for learning Computer Vision/ Image Processing. Based on OpenCV kernels.
+# cyborg-image_processing-gui
+A Qt based GUI developed for testing OpenCV functions faster and comparing results easily. It helps to explain image processing operations in while taking classes on image processing or computer vision.
