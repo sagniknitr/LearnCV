@@ -33,7 +33,7 @@ QT += widgets
 INCLUDEPATH += /usr/local/include/opencv4\
                Include
 
-LIBS += $(shell pkg-config opencv --libs)
+LIBS += $(shell pkg-config opencv4 --libs)
 
 
 
