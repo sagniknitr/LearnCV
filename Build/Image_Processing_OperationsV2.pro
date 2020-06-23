@@ -10,38 +10,36 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = LearnCV V2
+TARGET = LearnCV
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-    proc_functions.cpp \
-    uiandmain.cpp \
-    parameters.cpp \
-    setparameters.cpp \
-    paramsetcalls.cpp
+SOURCES += Source\\main.cpp\
+    Source\\proc_functions.cpp \
+    Source\\uiandmain.cpp \
+    Source\\parameters.cpp \
+    Source\\setparameters.cpp \
+    Source\\paramsetcalls.cpp
 
-HEADERS  += imageproc.h \
-    parameters.h \
-    setparameters.h
+HEADERS  += Include\\imageproc.h \
+    Include\\parameters.h \
+    Include\\setparameters.h
 
-FORMS    += imageproc.ui \
-    setparameters.ui
+FORMS    += Build\\imageproc.ui \
+    Build\\setparameters.ui
 
 QT += widgets
 
-INCLUDEPATH += F:\\OpenCV-2.4.9\\include
+INCLUDEPATH += /usr/local/include/opencv4\
+               Include
 
-LIBS += -LF:\\OpenCV-2.4.9\\build-qt\\lib \
-    -lopencv_core249d \
-     -lopencv_highgui249d \
-    -lopencv_imgproc249d \
-    -lopencv_objdetect249d
+LIBS += $(shell pkg-config opencv --libs)
+
 
 
 DISTFILES +=
 
-win32:RC_ICONS += IconCyborg.ico
+win32:RC_ICONS += Resources\\Sagnik.ico
 
 RESOURCES += \
-    resfile1.qrc
+   Build\\resfile1.qrc
