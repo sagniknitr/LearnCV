@@ -1,7 +1,7 @@
 #include "setparameters.h"
-#include "imageproc.h"
+#include "learncv.h"
 #include "parameters.h"
-#include "ui_imageproc.h"
+#include "ui_learncv.h"
 #include "ui_setparameters.h"
 #define junk -1001
 

@@ -34,6 +34,15 @@ Qt5
 |       Up           |                |
 |       Down         |                |
 
+# Demo
+
+![](./Resources/demo1.jpg)
+
+Following operations are shown in the demo : 
+
+1) Auto Threshold (using Otsu Thresholding)
+2) RGB to Grayscale 
+3) Cartesian Rotate
 
 # License 
 MIT License

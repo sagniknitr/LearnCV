@@ -1,4 +1,4 @@
-#include "imageproc.h"
+#include "learncv.h"
 #include <QApplication>
 
 int main(int argc, char *argv[]) {

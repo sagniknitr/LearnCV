@@ -21,11 +21,11 @@ SOURCES += Source\\main.cpp\
     Source\\setparameters.cpp \
     Source\\paramsetcalls.cpp
 
-HEADERS  += Include\\imageproc.h \
+HEADERS  += Include\\learncv.h \
     Include\\parameters.h \
     Include\\setparameters.h
 
-FORMS    += Build\\imageproc.ui \
+FORMS    += Build\\learncv.ui \
     Build\\setparameters.ui
 
 QT += widgets

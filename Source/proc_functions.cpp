@@ -1,5 +1,5 @@
-#include "imageproc.h"
-#include "ui_imageproc.h"
+#include "learncv.h"
+#include "ui_learncv.h"
 
 Mat ImageProc::threshBinary(
     Mat src,
