@@ -59,6 +59,13 @@ protected:
 
   int selectedListIndex;
   int opListIndex;
+  enum OpticalFlowParam {
+    LK = 0,
+    TVL1,
+    DIS,
+    BM
+  };
+
 
 protected:
   //---------------------------Fuction protoypes------------------------------
@@ -93,6 +100,7 @@ protected:
   Mat detecthands(Mat src);
   Mat correctGamma(Mat &img, double gamma);
   Mat dilateIm(Mat src, int dilatex, int dilatey);
+  Mat opticalFlow(Mat frame_p, Mat frame_r, OpticalFlowParam params = LK);
 
   //--------------------------------------------------------------------------
 public slots:
